@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://floralbydalia.lovable.app/sitemap.xml

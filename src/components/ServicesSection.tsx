@@ -47,7 +47,7 @@ const services = [
 
 const ServicesSection = () => (
   <section id="services" className="py-24 px-6">
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-[90vw] lg:max-w-[80vw] mx-auto">
       <AnimatedSection>
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.2em] uppercase text-coral font-sans mb-3">What We Offer</p>
@@ -59,11 +59,11 @@ const ServicesSection = () => (
         {services.map((service, i) => (
           <AnimatedSection key={service.title} delay={i * 0.1}>
             <div className="group bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-border/50">
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[4/4] overflow-hidden ">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">

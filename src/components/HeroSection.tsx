@@ -14,14 +14,14 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/80" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto bg-white/50 p-8 rounded-lg shadow-lg">
+      <div className="relative z-10 text-center px-6 sm:max-w-3xl max-w-sm mx-auto bg-white/50 p-8 rounded-lg shadow-lg">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col justify-center items-center"
         >
-          <p className="text-sm tracking-[0.3em] uppercase bg-white w-fit px-4 rounded-full text-muted-foreground mb-4 font-sans">
+          <p className="text-[0.65rem] sm:text-sm tracking-[0.3em] uppercase bg-white w-fit px-2 sm:px-4 sm:py-[0.1rem] py-[0.2rem] rounded-full text-muted-foreground mb-4 font-sans">
             Creating moments that feel special
           </p>
           <h1 className="text-5xl md:text-7xl font-serif font-semibold text-foreground mb-6 leading-tight">
@@ -40,7 +40,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
+      {/* <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
@@ -48,7 +48,7 @@ const HeroSection = () => {
         <div className="w-5 h-8 border-2 border-muted-foreground/50 rounded-full flex justify-center pt-1">
           <div className="w-1 h-2 bg-muted-foreground/50 rounded-full" />
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

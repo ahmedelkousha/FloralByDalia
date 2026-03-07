@@ -181,11 +181,11 @@ const ContactSection = () => {
           </p>
 
           <div className="space-y-4 w-auto">
-            <a
+            {/* <a
               href="mailto:hello@floralbydalia.com"
               className="w-fit flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors font-sans">
               <Mail className="w-5 h-5" /> hello@floralbydalia.com
-            </a>
+            </a> */}
             <a
               href="tel:+17087177599"
               className="w-fit flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors font-sans">

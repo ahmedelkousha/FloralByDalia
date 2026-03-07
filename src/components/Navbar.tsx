@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/logo.jpeg";
 
 const navLinks = [
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "How It Works", href: "#how-it-works" },

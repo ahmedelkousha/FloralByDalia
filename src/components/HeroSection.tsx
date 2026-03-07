@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import desktopVideo from "../assets/heroDesktopVid.mp4";
 const HeroSection = () => {
   // Replace this with the 11-character ID of your YouTube video
-  const videoIdDesktop = "HTFJXo3gCKM";
-  const videoIdMob = "cWl1zKBCHS0";
+  
+  // const videoIdDesktop = "HTFJXo3gCKM";
+  // const videoIdMob = "cWl1zKBCHS0";
 
   // State to track if the iframe has finished loading
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
- !isVideoLoaded ? (document.body.style.overflow = "hidden") :(document.body.style.overflow = "auto");
+  !isVideoLoaded
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
   const scrollToServices = () => {
     document.querySelector("#services")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -18,7 +21,9 @@ const HeroSection = () => {
   const petalArray = [...Array(numPetals)];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* --- LOADING SCREEN OVERLAY --- */}
       <AnimatePresence>
         {!isVideoLoaded && (
@@ -70,22 +75,24 @@ const HeroSection = () => {
       {/* Background video */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* DESKTOP IFRAME */}
-        <iframe
-          src={`https://www.youtube.com/embed/${videoIdDesktop}?autoplay=1&mute=1&loop=1&playlist=${videoIdDesktop}&controls=0&showinfo=0&rel=0&playsinline=1&disablekb=1`}
-          title="Desktop Background Video"
-          allow="autoplay; encrypted-media"
-          onLoad={() => setInterval(() => setIsVideoLoaded(true), 1250)}
-          className="hidden sm:block absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
+        <video
+          onLoadedData={() => setTimeout(() => setIsVideoLoaded(true), 800)}
+          src={desktopVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
         />
 
         {/* MOBILE IFRAME */}
-        <iframe
+        {/* <iframe
           src={`https://www.youtube.com/embed/${videoIdMob}?autoplay=1&mute=1&loop=1&playlist=${videoIdMob}&controls=0&showinfo=0&rel=0&playsinline=1&disablekb=1`}
           title="Mobile Background Video"
           allow="autoplay; encrypted-media"
           onLoad={() => setInterval(() => setIsVideoLoaded(true), 1250)}
           className="block sm:hidden absolute top-1/2 left-1/2 w-[100vw] h-[177.77vw] min-h-[100vh] min-w-[56.25vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
-        />
+        /> */}
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/30 to-background/30 pointer-events-none" />

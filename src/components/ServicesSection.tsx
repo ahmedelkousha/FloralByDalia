@@ -27,7 +27,15 @@ import wedding6 from "@/assets/wedding-bridal/wedding6.jpg";
 import wedding7 from "@/assets/wedding-bridal/wedding7.jpg";
 import wedding8 from "@/assets/wedding-bridal/wedding8.jpg";
 
-import events from "@/assets/service-events.jpg";
+import event1 from "@/assets/event/event1.jpg";
+import event2 from "@/assets/event/event2.jpg";
+// import event3 from "@/assets/event/event3.jpg";
+import event4 from "@/assets/event/event4.jpg";
+import event5 from "@/assets/event/event5.jpg";
+import event6 from "@/assets/event/event6.jpg";
+import event7 from "@/assets/event/event7.jpg";
+// import event8 from "@/assets/event/event8.jpg";
+// import event9 from "@/assets/event/event9.png";
 
 import bloombar1 from "@/assets/bloom-bar/bloom1.jpg";
 import bloombar2 from "@/assets/bloom-bar/bloom2.jpg";
@@ -38,9 +46,27 @@ import bloombar6 from "@/assets/bloom-bar/bloom6.jpg";
 import bloombar7 from "@/assets/bloom-bar/bloom7.jpg";
 import bloombar8 from "@/assets/bloom-bar/bloom8.jpg";
 
-import workshops from "@/assets/service-workshops.jpg";
-import ringtrays from "@/assets/service-ringtrays.jpg";
-import subscription from "@/assets/service-subscription.jpg";
+import ws1 from "@/assets/workshop/ws1.jpg";
+import ws2 from "@/assets/workshop/ws2.jpg";
+import ws3 from "@/assets/workshop/ws3.jpg";
+// import ws4 from "@/assets/workshop/ws4.jpg";
+// import ws5 from "@/assets/workshop/ws5.jpg";
+import ws6 from "@/assets/workshop/ws6.jpg";
+// import ws7 from "@/assets/workshop/ws7.jpg";
+import ws8 from "@/assets/workshop/ws8.jpg";
+
+import rt1 from "@/assets/ring-tray/rt1.jpg";
+import rt2 from "@/assets/ring-tray/rt2.jpg";
+import rt3 from "@/assets/ring-tray/rt3.jpg";
+import rt4 from "@/assets/ring-tray/rt4.jpg";
+
+import sub1 from "@/assets/subscription/sub1.jpg";
+import sub2 from "@/assets/subscription/sub2.jpg";
+import sub3 from "@/assets/subscription/sub3.jpg";
+import sub4 from "@/assets/subscription/sub4.png";
+import sub5 from "@/assets/subscription/sub5.jpg";
+import sub6 from "@/assets/subscription/sub6.jpg";
+import sub7 from "@/assets/subscription/sub7.jpg";
 
 const services = [
   {
@@ -59,7 +85,7 @@ const services = [
     title: "Event Floral Design",
     description:
       "From engagement parties to corporate events — we transform ordinary spaces into warm, beautiful settings filled with life.",
-    images: [events, events, events],
+    images: [event1, event2,  event4, event5, event6, event7 /* event3, event8, event9 are removed due to quality issues */],
   },
   {
     title: "Bloom Bar",
@@ -71,19 +97,19 @@ const services = [
     title: "Floral Workshops",
     description:
       "Hands-on workshops perfect for girls' gatherings, bridal parties, and team-building events. A creative experience filled with positive energy.",
-    images: [workshops, workshops, workshops],
+    images: [ws1, ws2, ws3, ws6, ws8, /* ws4, ws5, ws7 are removed due to quality issues */],
   },
   {
     title: "Ring Trays",
     description:
       "Ring trays designed for engagements and wedding ceremonies. A delicate detail that becomes part of your forever memories.",
-    images: [ringtrays, ringtrays],
+    images: [rt1, rt2, rt3, rt4],
   },
   {
     title: "Monthly Subscriptions",
     description:
       "Weekly or monthly seasonal arrangements delivered to your home or office. Fresh flowers, fresh energy.",
-    images: [subscription, subscription],
+    images: [sub1, sub2, sub3, sub4, sub5, sub6, sub7],
   },
 ];
 

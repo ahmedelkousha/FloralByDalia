@@ -124,3 +124,13 @@
   border-radius: 50%; /* Makes the background a circle */
   padding: 10px;
 }
+
+@media (width >= 48rem) {
+  #home, #about, #services, #how-it-works, #contact{
+  scroll-margin: 10rem;
+}}
+@media (width < 48rem) {
+  #home, #about, #services, #how-it-works, #contact{
+  scroll-margin: 20px;
+}}
+

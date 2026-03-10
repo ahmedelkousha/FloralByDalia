@@ -1,4 +1,4 @@
-import { Instagram, Mail } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
 import logo from "@/assets/logo.jpeg";
 
 const Footer = () => {
@@ -12,7 +12,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
           {/* Brand */}
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Floral by Dalia" className="h-12 w-12 rounded-full object-cover" />
+            <img
+              src={logo}
+              alt="Floral by Dalia"
+              className="h-12 w-12 rounded-full object-cover"
+            />
             <span className="font-serif text-xl">
               Floral <span className="italic font-light">by Dalia</span>
             </span>
@@ -20,12 +24,17 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex flex-wrap gap-8">
-            {[{ href: "#about", label: "About" }, { href: "#services", label: "Services" }, { href: "#how-it-works", label: "How It Works" }, { href: "#contact", label: "Contact" }].map((link) => (
+            {[
+              { href: "#home", label: "Home" },
+              { href: "#about", label: "About" },
+              { href: "#services", label: "Services" },
+              { href: "#how-it-works", label: "How It Works" },
+              { href: "#contact", label: "Contact" },
+            ].map((link) => (
               <button
                 key={link.href}
                 onClick={() => scrollTo(link.href)}
-                className="text-sm font-sans tracking-widest uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-              >
+                className="text-sm font-sans tracking-widest uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 {link.label}
               </button>
             ))}
@@ -33,12 +42,22 @@ const Footer = () => {
 
           {/* Social */}
           <div className="flex gap-4">
-            <a href="https://instagram.com/floralbydalia" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+            <a
+              href="tel:+17087177599"
+              className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <Phone size={20} />
+            </a>
+            <a
+              href="https://instagram.com/floralbydalia"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               <Instagram size={20} />
             </a>
-            <a href="mailto:hello@floralbydalia.com" aria-label="Email" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+            {/* <a href="mailto:hello@floralbydalia.com" aria-label="Email" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               <Mail size={20} />
-            </a>
+            </a> */}
           </div>
         </div>
 

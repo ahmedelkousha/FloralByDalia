@@ -16,7 +16,7 @@ const AboutSection = () => (
           <p>
             I realized that flowers have their own way of making people feel better — sometimes without saying a word.
           </p>
-          <p className="font-serif italic text-foreground text-lg">
+          <p className="font-serif italic text-foreground text-base">
             That's how Floral by Dalia started — based in Chicago — a simple dream built from love for details, soft colors, and creating moments that feel special.
           </p>
         </div>

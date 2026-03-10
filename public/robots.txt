@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://floralbydalia.lovable.app/sitemap.xml
+Sitemap: https://floralbydalia.com/sitemap.xml

@@ -143,10 +143,11 @@ const ServicesSection = () => (
                     {service.images.map((imgSrc, index) => (
                       <SwiperSlide key={index}>
                         <img
+                        loading="lazy"
                           src={imgSrc}
                           alt={`${service.title} - view ${index + 1}`}
                           /* Removed the hover scale effect specifically from mobile so it doesn't stick after swiping */
-                          className="w-full h-full object-cover object-center sm:group-hover:scale-105 transition-transform duration-500"
+                          className="w-full h-full object-contain object-center sm:group-hover:scale-105 transition-transform duration-500"
                         />
                       </SwiperSlide>
                     ))}

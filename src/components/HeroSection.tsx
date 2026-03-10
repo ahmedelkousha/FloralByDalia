@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import desktopVideo from "../assets/heroDesktopVid.mp4";
-import posterImg from "../assets/poster.png";
+import posterImg from "../assets/poster.jpg";
 
 const HeroSection = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);

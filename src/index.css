@@ -119,10 +119,12 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: var(--primary); /* Changes the color of the arrow (SVG fill/text color) */
-  background-color: #fff; /* Adds a background color */
+  color: black !important; /* Changes the color of the arrow (SVG fill/text color) */
   border-radius: 50%; /* Makes the background a circle */
   padding: 10px;
+  background-color: transparent;
+  height: 42px !important;
+  width: 42px !important;
 }
 
 @media (width >= 48rem) {
